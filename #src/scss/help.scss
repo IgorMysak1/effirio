@@ -1,0 +1,123 @@
+.help {
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    padding: 80px 0;
+    &__wrapper {
+        height: 100%;
+        width: 100%;
+    }
+    @media (max-width: $md2+px) {
+        & {
+            padding: 30px 0;
+        }
+    }
+}
+.wrapper-help {
+    &__text {
+    }
+
+    &__body {
+        margin: 30px 0 60px;
+    }
+
+    &__happy {
+    }
+
+    &__answer {
+    }
+    @media (max-width: $md2+px) {
+        &__body {
+            margin: 30px 0;
+        }
+    }
+}
+.text-help {
+    &__title p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        color: #2c2d31;
+    }
+    &__title span {
+        color: #7252dc;
+    }
+    &__subtitle {
+        padding: 15px 0;
+    }
+    &__subtitle p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 130%;
+        text-align: center;
+        color: #2c2d31;
+    }
+    &__subtitle span {
+        color: #7252dc;
+    }
+}
+.body-help {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.16);
+    border-radius: 3px;
+    & img {
+        width: 100%;
+    }
+    @media (max-width: $md4+px) {
+        & {
+            flex-direction: column;
+        }
+    }
+}
+.happy-help {
+    &__text {
+    }
+}
+.answer-help {
+    &__callback {
+    }
+}
+.answer-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #2c2d31;
+}
+.callback-help {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    &__take-free {
+        margin-right: 5px;
+    }
+    &__advice {
+        display: none;
+    }
+    &__whatsapp {
+        margin-left: 5px;
+    }
+    @media (max-width: $md2+px) {
+        &__advice {
+            display: flex;
+        }
+    }
+}
+.callback-delete {
+    display: flex;
+}
+@media (max-width: $md2+px) {
+    .callback-delete {
+        display: none;
+    }
+}

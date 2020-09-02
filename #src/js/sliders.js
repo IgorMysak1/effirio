@@ -1,25 +1,91 @@
 //SLIDERS
-if($('.mainslider').length>0){
-	$('.mainslider').slick({
+if ($('.body-customer__sliders').length > 0) {
+	$('.body-customer__sliders').slick({
 		//autoplay: true,
-		//infinite: false,
 		dots: true,
-		arrows: false,
-		accessibility:false,
-		slidesToShow:1,
-		autoplaySpeed: 3000,
-		//asNavFor:'',
-		//appendDots:
-		//appendArrows:$('.mainslider-arrows .container'),
-		nextArrow:'<button type="button" class="slick-next"></button>',
-		prevArrow:'<button type="button" class="slick-prev"></button>',
+		arrows: true,
+		slidesToShow: 3,
+		autoplaySpeed: 2000,
+		slidesToScroll: 3,
+		easing: 'ease',
+		infinite: false,
+		touchThreshold: 10,
+		waitForAnimate: false,
 		responsive: [{
-			breakpoint: 768,
-			settings: {}
+			breakpoint: 1137,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
+			}
+		}, {
+			breakpoint: 767.98,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				waitForAnimate: true,
+				touchThreshold: 5
+			}
+		}, {
+			breakpoint: 479.98,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				waitForAnimate: true,
+				arrows: false,
+				touchThreshold: 5
+			}
+		}]
+	});
+}
+if ($('.message-voice__sliders').length > 0) {
+	$('.message-voice__sliders').slick({
+		//autoplay: true,
+		dots: false,
+		arrows: true,
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		easing: 'ease',
+		infinite: false,
+		touchThreshold: 10,
+		waitForAnimate: false,
+		responsive: [{
+			breakpoint: 1137,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
+			}
+		}, {
+			breakpoint: 991.98,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				waitForAnimate: true,
+				touchThreshold: 5
+			}
 		}]
 	});
 }
 /*
+arrows: true  //включені стрілки
+dots: true //крапки
+autoplay: true //автоматичне прокручування
+autoplaySpeed: 3000 //кожниїх 3 сек буду перегортуватися слайд
+pauseOnFocus:true //пауза при наведенні
+pauseOnHover:true //пауза при наведенні
+pauseOnDotsHover:true //пауза при наведенні
+draggble: false //виключає свайп на компютері
+swipe: false //виключає свайп на телефонах
+touchThreshold: 10 //наскільки багато треба свайпнути щоб переключився слайдер
+touchMove: true //не можна тягнути слайдер на телефонах
+waitForAnimate: false //дозволяє дуже швидко перегортувати слайдер
+centerMode: true //основна картинка по центру слайдера
+variableWidth: false //займає ширину картинки
+rows: 2 //кількість картинок врядок
+slidesPerRow: 1 //кількість колонок в ряді
+vertical: true //вертикальний слайдер
+verticalSwiping: true //вертикальний сайт
+fade: true //працює з одною картинкою , надає плавність
+asNavFor:" " //звязування слайдів , щоб підключити треба зробити обмін назви класу слайдера
 
 
 // SLIDER ON MOBILE
@@ -43,7 +109,7 @@ if($('.reviews-object__items').length>0){
 			},{
 				breakpoint: 768,
 				settings: {
-					
+
 				}
 			}]
 		});
@@ -113,7 +179,7 @@ if($('.newsmodule-slider').length>0){
 		$('.newsmodule-slider').slick('goTo',$(this).index());
 	});
 	$('.newsmodule-navigator-info span').eq(1).html($('.newsmodule-items-item').length);
-	
+
 	$('.newsmodule-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 		$('.newsmodule-navigator-info span').eq(0).html(nextSlide+1);
 	});

@@ -1,0 +1,114 @@
+.benefits {
+    height: 100%;
+    width: 100%;
+    background: #f5f6fa;
+    padding-bottom: 60px;
+    &__wrapper {
+        height: 100%;
+        width: 100%;
+    }
+    @media (max-width: $md3+px) {
+        padding: 20px 0;
+    }
+}
+
+.wrapper-benefits {
+    display: flex;
+    flex-direction: column;
+    &__title {
+    }
+
+    &__body {
+    }
+}
+.title-benefits {
+    padding: 30px 0;
+    & p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 110%;
+        text-align: center;
+        color: #2c2d31;
+    }
+    & span {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 110%;
+        text-align: center;
+        color: #7252dc;
+    }
+}
+.body-benefits {
+    width: 100%;
+    display: flex;
+    &__item {
+        margin: 0 15px;
+    }
+    @media (max-width: $md3+px) {
+        & {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item {
+            margin: 5px 0;
+        }
+    }
+}
+.item-benefits {
+    width: 33.333%;
+    background: #ffffff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.16);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 0;
+    &__img img {
+        width: 100%;
+    }
+
+    &__info {
+    }
+    @media (max-width: $md3+px) {
+        & {
+            width: 70%;
+        }
+    }
+    @media (max-width: $md4+px) {
+        & {
+            width: 100%;
+        }
+    }
+}
+.info-benefits {
+    & p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 130%;
+        text-align: center;
+        color: #2c2d31;
+        padding: 35px;
+    }
+    & p :nth-child(3) {
+        width: 90%;
+    }
+    span {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 130%;
+        text-align: center;
+        color: #7252dc;
+        margin-left: 4px;
+    }
+}
+.db {
+    display: block;
+}

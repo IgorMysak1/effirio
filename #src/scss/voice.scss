@@ -1,0 +1,124 @@
+.voice {
+    height: 100%;
+    width: 100%;
+    background: #eaeef9;
+    padding: 60px 0;
+    &__wrapper {
+    }
+    @media (max-width: $md3+px) {
+        & {
+            padding: 20px 0;
+        }
+    }
+}
+.wrapper-voice {
+    &__title {
+    }
+
+    &__info {
+    }
+
+    &__message {
+    }
+}
+.title-voice {
+    p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 110%;
+        text-align: center;
+        color: #2c2d31;
+        padding: 20px 0;
+    }
+    span {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 110%;
+        text-align: center;
+        color: #7252dc;
+    }
+    @media (max-width: $md3+px) {
+        span {
+            font-size: 32px;
+        }
+        p {
+            font-size: 30px;
+            padding: 0;
+        }
+    }
+}
+.info-voice {
+    p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 130%;
+        text-align: center;
+        color: #2c2d31;
+        padding: 10px 0;
+    }
+    @media (max-width: $md3+px) {
+        p {
+            font-size: 20px;
+        }
+    }
+}
+.message-voice {
+    &__title p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 110%;
+        text-align: center;
+        color: #2c2d31;
+        padding: 20px 0;
+    }
+    &__sliders img {
+        transform: scale(0.85);
+    }
+    &__sliders {
+        position: relative;
+        padding: 0 20px;
+    }
+    &__sliders .slick-arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        font-size: 0;
+        height: 60px;
+        width: 30px;
+        margin: -35px 0 0 0;
+    }
+    &__sliders .slick-arrow.slick-next {
+        right: 0;
+        background: url(../img/customer/rightArrow.png) 0 0 / 100% no-repeat;
+    }
+    &__sliders .slick-arrow.slick-prev {
+        left: 0;
+        background: url(../img/customer/leftArrow.png) 0 0 / 100% no-repeat;
+    }
+    &__sliders .slick-arrow.slick-disabled {
+        opacity: 0.2;
+    }
+    @media (max-width: $md3+px) {
+        &__sliders button {
+            transform: scale(0.8);
+        }
+    }
+}
+.slider-voice {
+    &__slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__slide img {
+        max-width: 100%;
+    }
+}

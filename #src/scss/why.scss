@@ -1,0 +1,224 @@
+.why {
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    padding: 40px 0;
+    &__wrapper {
+        height: 100%;
+        width: 100%;
+    }
+    @media (max-width: $md3+px) {
+        padding: 0;
+    }
+}
+
+.wrapper-why {
+    &__text p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 47px;
+        line-height: 120%;
+        text-align: center;
+        color: #2c2d31;
+    }
+    &__text span {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 120%;
+        text-align: center;
+        color: #7252dc;
+    }
+
+    &__body {
+    }
+
+    &__callback {
+    }
+}
+.title-why {
+    padding-bottom: 40px;
+    & span {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 120%;
+        text-align: center;
+        color: #7252dc;
+    }
+    & p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 47px;
+        line-height: 120%;
+        text-align: center;
+        color: #2c2d31;
+    }
+    @media (max-width: $md3+px) {
+        & {
+            padding: 0 10px;
+        }
+        & span {
+            font-size: 27px;
+        }
+        & p {
+            font-size: 25px;
+            padding: 20px 0;
+        }
+    }
+}
+.text-why {
+    width: 60%;
+    padding-left: 40px;
+    &__title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        color: #7252dc;
+    }
+
+    &__subtitle {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        color: #2c2d31;
+    }
+    @media (max-width: $md3+px) {
+        & {
+            width: 100%;
+            padding: 30px;
+            background: #f5f6fa;
+        }
+    }
+}
+.body-why {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__item {
+        position: relative;
+    }
+}
+.item-why {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    &__img {
+    }
+    &__text {
+    }
+    @media (max-width: $md3+px) {
+        padding: 5px 0;
+    }
+}
+.img-why {
+    width: 40%;
+    & img {
+        width: 100%;
+    }
+    @media (max-width: $md3+px) {
+        & {
+            display: none;
+        }
+    }
+}
+.callback-why {
+    &__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 0;
+    }
+    &__text p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 130%;
+        text-align: center;
+        color: #2c2d31;
+    }
+
+    @media (max-width: $md3+px) {
+        &__text {
+            padding: 10px 0;
+        }
+    }
+}
+.btn-why {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    &__take-free {
+        margin-right: 10px;
+    }
+
+    &__whatsapp {
+        margin-left: 10px;
+    }
+    @media (max-width: $md3+px) {
+        &__whatsapp {
+            display: none;
+        }
+    }
+}
+.row-reverse {
+    flex-direction: row-reverse;
+}
+.row-reverse .item-why__text {
+    padding: 0 40px 0 0;
+    @media (max-width: $md3+px) {
+        padding: 30px;
+    }
+}
+.body-why {
+    &__mobile-img {
+        display: none;
+    }
+    @media (max-width: $md3+px) {
+        &__mobile-img {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+.why-img {
+    &__mobile {
+        width: 70%;
+        padding: 30px 0;
+        margin: 0 auto;
+    }
+    @media (max-width: $md4+px) {
+        &__mobile {
+            width: 100%;
+        }
+    }
+}
+.why-number {
+    display: none;
+}
+@media (max-width: $md3+px) {
+    .why-number {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 15px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 144px;
+        line-height: 100%;
+        color: rgba(168, 206, 255, 0.3);
+    }
+}
