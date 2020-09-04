@@ -65,6 +65,34 @@ if ($('.message-voice__sliders').length > 0) {
 		}]
 	});
 }
+if ($('.wrapper-depression__sliders').length > 0) {
+	$('.wrapper-depression__sliders').slick({
+		//autoplay: true,
+		dots: false,
+		arrows: true,
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		easing: 'ease',
+		infinite: false,
+		touchThreshold: 10,
+		waitForAnimate: false,
+		responsive: [{
+			breakpoint: 1137,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
+			}
+		}, {
+			breakpoint: 991.98,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				waitForAnimate: true,
+				touchThreshold: 5
+			}
+		}]
+	});
+}
 /*
 arrows: true  //включені стрілки
 dots: true //крапки

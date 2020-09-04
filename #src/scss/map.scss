@@ -1,0 +1,146 @@
+.map {
+    height: 100%;
+    width: 100%;
+    background: url(../img/map/map.png) center/cover no-repeat;
+    padding: 60px 0;
+    &__wrapper {
+        height: 100%;
+        width: 100%;
+    }
+    @media (max-width: $md4+px) {
+        & {
+            padding: 25px 0;
+        }
+    }
+}
+
+.wrapper-map {
+    &__content {
+    }
+}
+.content-map {
+    width: 40%;
+    background: #ffffff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.16);
+    border-radius: 3px;
+    &__info {
+    }
+    &__callback {
+    }
+    @media (max-width: $md2+px) {
+        & {
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+    @media (max-width: $md3+px) {
+        & {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    @media (max-width: $md4+px) {
+        & {
+            width: 90%;
+        }
+    }
+}
+.info-map {
+    padding: 50px 30px;
+    &__title {
+    }
+
+    &__item {
+    }
+    @media (max-width: $md3+px) {
+        & {
+            padding: 20px 10px;
+        }
+    }
+}
+.title-map {
+    p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 120%;
+        text-align: left;
+        color: #000000;
+        padding-bottom: 20px;
+    }
+}
+.item-map {
+    display: flex;
+    padding: 10px 0;
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__text {
+    }
+    &__img {
+        width: 40px;
+    }
+}
+.text-map {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 30px;
+    p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 150%;
+        text-align: left;
+        color: #2c2d2f;
+    }
+    a {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: left;
+        color: #000000;
+    }
+    @media (max-width: $md3+px) {
+        padding-left: 10px;
+    }
+}
+.callback-map {
+    background: #f5f6fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__text {
+        width: 60%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 36px;
+        text-align: center;
+        color: #000000;
+        padding: 20px 0;
+    }
+
+    &__btn {
+        margin-bottom: 40px;
+    }
+    @media (max-width: $md4+px) {
+        &__btn {
+            margin-bottom: 20px;
+            width: 90%;
+        }
+        &__text {
+            width: 90%;
+        }
+    }
+}

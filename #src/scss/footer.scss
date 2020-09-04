@@ -1,5 +1,91 @@
-footer{}
-//====================================================================================================
+.footer {
+    height: 100%;
+    width: 100%;
+    background: #7252dc;
+    padding: 50px 0;
+    &__wrapper {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    @media (max-width: $md3+px) {
+        & {
+            padding: 30px 0;
+        }
+        &__wrapper {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: centers;
+            align-items: center;
+            flex-direction: column-reverse;
+        }
+    }
+}
+.wrapper-footer {
+    &__title {
+        width: 33%;
+    }
+    &__title p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 150%;
+        color: #ffffff;
+        padding: 0 10px;
+    }
+    &__title p:first-child {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 150%;
+        color: #ffffff;
+        padding: 0 10px;
+    }
 
-//====================================================================================================
-
+    &__text {
+        width: 30%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: #ffffff;
+        padding: 0 10px;
+    }
+    @media (max-width: $md3+px) {
+        &__title {
+            width: 60%;
+            padding: 10px 0;
+            text-align: center;
+        }
+        &__title p {
+            padding: 0;
+            text-align: center;
+        }
+        &__title p:nth-child(2) {
+            display: none;
+        }
+        &__title p:first-child {
+            padding: 0;
+            text-align: center;
+        }
+        &__text {
+            width: 60%;
+            padding: 10px 0;
+            text-align: center;
+        }
+    }
+    @media (max-width: $md4+px) {
+        &__title {
+            width: 80%;
+        }
+        &__text {
+            width: 80%;
+        }
+    }
+}
