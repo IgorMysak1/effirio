@@ -90,9 +90,9 @@
 	background: #7252dc;
 	position: fixed;
 	top: 0;
-	right: -59999px;
+	right: -100%;
 	z-index: 4;
-	transition: 10s;
+	transition: 0.7s ease;
 }
 @media (max-width: $md3+px) {
 	.menu {
@@ -103,8 +103,8 @@
 			position: fixed;
 			top: 0;
 			right: 0;
+			transition: 0.7s ease;
 			z-index: 4;
-			transition: 1s;
 			display: flex;
 			justify-content: flex-end;
 			align-items: flex-start;
@@ -118,6 +118,7 @@
 		&__content {
 			display: flex;
 			flex-direction: column;
+			padding-top: 50px;
 		}
 		&__content div {
 			height: 50px;
@@ -203,6 +204,7 @@
 		font-size: 16px;
 		line-height: 150%;
 		color: #2c2d31;
+		white-space: nowrap;
 	}
 	&__how-it-works {
 	}
@@ -352,12 +354,25 @@
 	align-items: center;
 	padding: 0 20px;
 	cursor: pointer;
+	transition: 0.7s ease;
 	& p {
 		font-family: Montserrat;
 		font-style: normal;
 		font-weight: 600;
 		font-size: 16px;
 		color: #ffffff;
+		line-height: 1.4;
+	}
+	@media (min-width:$md3+px){
+		&:hover{
+			transform: scale(1.1,1.1);
+			transition: 0.4s ease;
+		}
+	}
+	@media (max-width:$md1+px){
+		&{
+			width: 310px;
+		}
 	}
 }
 .whatsapp {
@@ -371,6 +386,7 @@
 	align-items: center;
 	padding: 0 20px;
 	cursor: pointer;
+	transition: 0.7s ease;
 	& p {
 		font-family: Montserrat;
 		font-style: normal;
@@ -378,6 +394,12 @@
 		font-size: 16px;
 		color: #ffffff;
 		margin-right: 30px;
+	}
+	@media (min-width:$md3+px){
+		&:hover{
+			transform: scale(1.1,1.1);
+			transition: 0.4s ease;
+		}
 	}
 }
 .body-header__info {

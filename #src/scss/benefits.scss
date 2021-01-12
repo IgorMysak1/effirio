@@ -41,6 +41,11 @@
         text-align: center;
         color: #7252dc;
     }
+    @media (max-width:$md3+px){
+        &{
+            padding: 0 0 10px 0;
+        }
+    }
 }
 .body-benefits {
     width: 100%;
